@@ -125,7 +125,7 @@ class MainActivity : AppCompatActivity() {
                     charmToBeReplaced = charmToBeDragged - 1
                     charmInterchange()
                     remainingMoves--
-                    binding.movesTxtView.text = "Moves: $remainingMoves"
+                    binding.movesTxtView.text = "Movimentos: $remainingMoves"
                     checkIfUserWonOrLost()
                 }
 
@@ -135,7 +135,7 @@ class MainActivity : AppCompatActivity() {
                     charmToBeReplaced = charmToBeDragged + 1
                     charmInterchange()
                     remainingMoves--
-                    binding.movesTxtView.text = "Moves: $remainingMoves"
+                    binding.movesTxtView.text = "Movimentos: $remainingMoves"
                     checkIfUserWonOrLost()
                 }
 
@@ -145,7 +145,7 @@ class MainActivity : AppCompatActivity() {
                     charmToBeReplaced = charmToBeDragged - numOfBlocks
                     charmInterchange()
                     remainingMoves--
-                    binding.movesTxtView.text = "Moves: $remainingMoves"
+                    binding.movesTxtView.text = "Movimentos: $remainingMoves"
                     checkIfUserWonOrLost()
                 }
 
@@ -155,7 +155,7 @@ class MainActivity : AppCompatActivity() {
                     charmToBeReplaced = charmToBeDragged + numOfBlocks
                     charmInterchange()
                     remainingMoves--
-                    binding.movesTxtView.text = "Moves: $remainingMoves"
+                    binding.movesTxtView.text = "Movimentos: $remainingMoves"
                     checkIfUserWonOrLost()
                 }
             })
@@ -249,11 +249,11 @@ class MainActivity : AppCompatActivity() {
      * */
     private fun checkIfUserWonOrLost() {
         if (score > 100) {
-            showGameResultDialog("Você Ganhou =)", "Parabéns!")
+            showGameResultDialog("Você Ganhou! =)", "Parabéns!")
             mHandler.removeCallbacks(repeatChecker) // Stop the thread
         }
         if (remainingMoves == 0) {
-            showGameResultDialog("Você Perdeu =)", "Perdedor =D")
+            showGameResultDialog("Você Perdeu! =(", "Não foi dessa vez!")
             mHandler.removeCallbacks(repeatChecker) // Stop the thread
         }
     }
