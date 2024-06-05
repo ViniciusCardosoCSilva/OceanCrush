@@ -24,7 +24,11 @@
             android:text="Movimentos: 30"
             android:textColor="@color/white"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:shadowColor="#000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="15"/>
 
         <ProgressBar
             android:id="@+id/scoreBar"
@@ -36,7 +40,8 @@
             android:layout_weight="0.5"
             android:max="100"
             android:progress="0"
-            android:progressDrawable="@drawable/purple_progress_bar" />
+            android:progressDrawable="@drawable/purple_progress_bar"
+            />
 
 
     </LinearLayout>
@@ -70,7 +75,11 @@
             android:layout_weight="0.5"
             android:text="Reiniciar"
             android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:shadowColor="#000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="15"/>
 
         <Button
             android:id="@+id/btnExit"
@@ -80,7 +89,11 @@
             android:layout_weight="0.5"
             android:text="Sair"
             android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:shadowColor="#000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="15"/>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
