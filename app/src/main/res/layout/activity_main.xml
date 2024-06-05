@@ -46,6 +46,24 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/iconOceans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#68DED2F2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="208dp"
+            android:layout_height="208dp"
+            android:src='@drawable/oceans20'/>
+
+
+    </LinearLayout>
+
+
     <GridLayout
         android:id="@+id/gameContainer"
         android:layout_width="match_parent"
